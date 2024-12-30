@@ -1,14 +1,7 @@
 @echo off
 set "file=\app\config\data.ts"
 
-start notepad "%~dp0%file%"
-
-:wait_for_notepad
-tasklist /FI "IMAGENAME eq notepad.exe" 2>NUL | find /I "notepad.exe">NUL
-if "%ERRORLEVEL%"=="0" (
-    timeout /t 1 >nul
-    goto wait_for_notepad
-)
+start /wait notepad "%~dp0%file%"
 
 cd "%~dp0"
 git add -A

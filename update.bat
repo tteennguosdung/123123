@@ -7,6 +7,3 @@ cd "%~dp0"
 git add -A
 git commit -m "Auto commit after editing data.ts"
 git push origin main --force
-
-echo Đã cập nhật thành công
-pause

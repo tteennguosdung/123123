@@ -7,4 +7,4 @@ cd "%~dp0"
 git add -A
 git commit -m "Auto commit after editing data.ts"
 git push origin main --force
-msg %username% "Đã cập nhật thành công"
+msg %username% "Da cap nhat thanh cong"

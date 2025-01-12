@@ -3,15 +3,10 @@ import Footer from '@/components/footer';
 import Header from '@/components/header';
 import { Links, Outlet, Scripts, ScrollRestoration, type LinksFunction } from 'react-router';
 import stylesheet from '@/app.css?url';
-import { handleBlockRedirect } from '@/utils/botDetection';
-import Warning from '@/routes/warning';
-import { useEffect } from 'react';
+
 export const links: LinksFunction = () => [{ rel: 'stylesheet', href: stylesheet }];
 
 export const Layout = ({ children }: Readonly<{ children: React.ReactNode }>) => {
-    useEffect(() => {
-        handleBlockRedirect();
-    }, []);
     return (
         <html lang='en'>
             <head>

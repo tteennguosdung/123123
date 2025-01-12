@@ -4,6 +4,9 @@ export default {
     content: ['./app/**/*.tsx'],
     theme: {
         extend: {
+            fontFamily: {
+                helvetica: ['-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans', 'sans-serif']
+            },
             keyframes: {
                 fadeIn: {
                     '0%': { opacity: '0', transform: 'scale(0.95)' },
